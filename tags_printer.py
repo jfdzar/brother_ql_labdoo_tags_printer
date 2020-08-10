@@ -1,6 +1,7 @@
 import json
 import logging
 import subprocess
+import time
 
 import urllib.request
 from urllib.request import urlopen
@@ -154,7 +155,8 @@ def print_label(img_file, model, printer):
     logging.info(output.decode('utf-8'))
     logging.error(error.decode('utf-8'))
 
-    input("Press any key to continue next image")
+    #input("Press any key to continue next image")
+    time.sleep(5)
 
 
 if __name__ == '__main__':
